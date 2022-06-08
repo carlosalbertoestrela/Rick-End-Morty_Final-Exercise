@@ -1,9 +1,12 @@
 const http = require('http');
-const routs = require('./routs')
-const port = 3333
+const routes = require('./routes')
+const port = 3344
+
+
 
 const server = http.createServer((req, res)=>{
-
+    const {url} = req;
+    routes[url](req,res)
 
 })
 
