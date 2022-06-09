@@ -16,7 +16,6 @@ devem estar disponíveis:
 * Listar personagens por gênero
 * Buscar personagem por nome
 * Buscar personagem por id
-* Buscar personagem por gênero
 * Criar uma rota SEPARADA para gerar um documento em uma pasta na raiz do projeto com o nome "tmp",
 contendo as informações de um personagem específico. O documento gerado deve ser no
 formato JSON e nomeado com o nome do personagem (ex: "rick-sanchez.json")
