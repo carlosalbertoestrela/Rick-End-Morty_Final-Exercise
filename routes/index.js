@@ -1,14 +1,13 @@
-const Character = require("../models/character")
+
+const CharacterControler = require('../controllers/characters-controler')
 
 module.exports = {
-    "/personagens": ()=>{Character.listCharacters},
-    "/personagens/nome":()=>{},
-    "/personagens/especie":()=>{},
-    "/personagens/origem":()=>{},
-    "/personagens/genero":()=>{},
-    "/personagens/id":()=>{},
-    "/personagens/id":()=>{},
-    "/personagens/id":()=>{},
+    "/personagens": CharacterControler.listCharacters,
+    "/personagem-name":CharacterControler.CharacterByName,
+    "/personagens-especie":CharacterControler.CharacterBySpecie,
+    "/personagens-origem":()=>{},
+    "/personagens-genero":()=>{},
+    "/personagem-id":CharacterControler.CharacterBySpecie,
     "/locais":()=>{},
     "/":()=>{},    
 }
