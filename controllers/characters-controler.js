@@ -33,7 +33,6 @@ class CharacterControler {
     static async CharacterByid(req, res){
         try {
             const {id} = req.queryParams
-            console.log(id)
             const characterByName = await character.getCharactersById(id)
 
             res.writeHead(200)
@@ -45,15 +44,31 @@ class CharacterControler {
             
         }
     }
+
     static async CharacterBySpecie(req, res){
         try {
             const {species} = req.queryParams
-            console.log(species)
             const characterBySpecie = await character.getCharactersBySpecie(species)
 
             res.writeHead(200)
             res.end(JSON.stringify(characterBySpecie))
 
+        } catch (error) {
+            res.writeHead(error.statusCode || 500)
+            res.end(error.message || 'server error')
+            
+        }
+    }
+
+    static async CharacterByOrigin(req, res){
+        try {
+            const {origin} = req.queryParams
+            console.log(origin)
+            const characterBySpecie = await character.getCharactersByOrigin(origin)
+    
+            res.writeHead(200)
+            res.end(JSON.stringify(characterByOrigin))
+    
         } catch (error) {
             res.writeHead(error.statusCode || 500)
             res.end(error.message || 'server error')

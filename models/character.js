@@ -31,6 +31,7 @@ class Character {
         return data
         
     }
+    
     static async getCharactersBySpecie(species){
         const options = {
             params : {
@@ -42,6 +43,17 @@ class Character {
         return data
         
     }
-
+    
+    static async getCharactersByOrigin(origin){
+        const options = {
+            params : {
+                origin: origin
+            }
+        }
+        
+        const {data} = await rickMortyApi.get('/character', options)
+        return data
+        
+    }
 }
 module.exports = Character;
