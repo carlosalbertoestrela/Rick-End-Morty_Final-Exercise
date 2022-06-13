@@ -4,72 +4,44 @@ Trabalho final do Módulo 6 - Técnicas de Programação I - NoseJS.
 
 ## 🚀 Começando
 
-
+### 🔧 Instalação
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **Implantação** para saber como implantar o projeto.
+1. Acessar o link e clonar o repositório. [Github](https://github.com/carlosalbertoestrela/Rick-End-Morty_Final-Exercise)
+2. No Postman, clique em import, na opção "por link" e adicione este endereço.  [Postman](https://www.getpostman.com/collections/02609d1a2642370350dc)
+3. Instale o Axios: 
+    - abrir PowerShell e executar o comando:
+```
+npm axios install
+```   
+
+4. No Terminal, digitar o comando: 
+```
+node index.js
+```
+
+5. Agora dentro do Postman é possível realizar as requisições.
+Em caso de erro, verificar se os pré-requisitos foram atendidos.
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
-
-### 🔧 Instalação
-
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
+* NodeJs 16.10 ou superior
+* Axios 
+* Postman
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+1. Na barra lateral esquerda, selecione uma das requisições pré-configuradas;
+2. Selecione um dos itens da lista e clique em "Send";
+3. Para uma melhor visualização, trocar a exibição do resultado de "Text" para "Json";
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* JavaScript Vanilla
 
 ## 📌 Versão
 
-1.8.0 2022
+1.8.2 2022
 
 ## ✒️ Autores
 
@@ -81,7 +53,7 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 Publica. Qualquer um na internet pode vizualizar este repositório.
 
-## 🎁 Expressões de gratidão
+## 🎁 Agradecimentos
 
-Nossos agradecimentos ao Professor Esdras Aguilar por todo conhecimento compartilhado e pelas as exelentes dicas profissionais.
+Nossos agradecimentos ao Professor Esdras Aguilar por todo conhecimento compartilhado e pelas as excelentes dicas profissionais.
 Um abraço especial para toda a turma 836 da LetsCode.
