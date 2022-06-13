@@ -31,13 +31,13 @@ class CharacterControler {
         }
     }
 
-    static async CharacterDonloadByName(req, res){
+    static async CharacterDownloadByName(req, res){
         try {
             const {name} = req.queryParams
             const characterDownload = await character.getCharacterByName(name)
             const characterName = (characterDownload[0].name).replace(" ","-");
 
-            fs.writeFile(`./tmp/${characterName}.txt`, JSON.stringify(characterDownload), 
+            fs.writeFile(`./tmp/${characterName}.json`, JSON.stringify(characterDownload), 
             erro=> erro ? console.log(erro) : console.log('sucess'))
 
             res.writeHead(201)

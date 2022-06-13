@@ -5,7 +5,7 @@ const EpisodeControler = require('../controllers/episodes-controler')
 
 module.exports = {
     // personagens
-    "/personagem-download": CharacterControler.CharacterDonloadByName,
+    "/personagem-download": CharacterControler.CharacterDownloadByName,
     "/personagens": CharacterControler.listCharacters,
     "/personagem-id": CharacterControler.CharacterById,
     "/personagem-nome": CharacterControler.CharacterByName,
