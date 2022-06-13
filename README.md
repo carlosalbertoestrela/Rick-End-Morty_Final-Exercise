@@ -1,8 +1,9 @@
-# Título do projeto
+# Rick-End-Morty_Final-Exercise
 
-Um parágrafo da descrição do projeto vai aqui
+Trabalho final do Módulo 6 - Técnicas de Programação I - NoseJS.
 
 ## 🚀 Começando
+
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
@@ -66,34 +67,21 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+1.8.0 2022
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+* **Carlos Alberto Estrela** - [Github](https://github.com/carlosalbertoestrela)
+* **Marcio Fernandes** - [Github](https://github.com/marciofsj)
+* **Wyller Faria** - [Github](https://github.com/Wyller21)
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+Publica. Qualquer um na internet pode vizualizar este repositório.
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢
-* Convide alguém da equipe para uma cerveja 🍺 
-* Obrigado publicamente 🤓.
-* etc.
-
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
+Nossos agradecimentos ao Professor Esdras Aguilar por todo conhecimento compartilhado e pelas as exelentes dicas profissionais.
+Um abraço especial para toda a turma 836 da LetsCode.
