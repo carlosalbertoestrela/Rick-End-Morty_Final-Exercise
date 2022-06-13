@@ -51,8 +51,38 @@ class Character {
             }
         }
         
-        const {data} = await rickMortyApi.get('/character', options)
-        return data
+        const {data} = await rickMortyApi.get('/character')
+        const originFiltered = data.results.filter(data => data.origin.name.includes(origin))
+
+        return originFiltered
+        
+    }
+    
+    static async getCharactersByStatus(status){
+        const options = {
+            params : {
+                status: status
+            }
+        }
+        
+        const {data} = await rickMortyApi.get('/character')
+        const statusFiltered = data.results.filter(data => data.status === status)
+
+        return statusFiltered
+        
+    }
+
+    static async getCharactersByGender(gender){
+        const options = {
+            params : {
+                gender: gender
+            }
+        }
+        
+        const {data} = await rickMortyApi.get('/character')
+        const genderFiltered = data.results.filter(data => data.gender === gender)
+
+        return genderFiltered
         
     }
 }

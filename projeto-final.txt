@@ -10,28 +10,28 @@ Requisitos obrigatórios:
 * Personagens:
 * Listar os personagens e permitir o uso de PAGINAÇÃO e o uso de filtros. Filtros que
 devem estar disponíveis:
-* Listar os personagens por status (Vivo ou morto)
-* Listar os personagens por espécie
-* Listar personagens por origem
-* Listar personagens por gênero
-* Buscar personagem por nome
-* Buscar personagem por id
+* Listar os personagens por status (Vivo ou morto) - ok 
+* Listar os personagens por espécie - ok
+* Listar personagens por origem - ok
+* Listar personagens por gênero - ok
+* Buscar personagem por nome - ok 
+* Buscar personagem por id - ok 
 * Criar uma rota SEPARADA para gerar um documento em uma pasta na raiz do projeto com o nome "tmp",
 contendo as informações de um personagem específico. O documento gerado deve ser no
 formato JSON e nomeado com o nome do personagem (ex: "rick-sanchez.json")
 * Locais:
-* Listar Locais e permitir o uso de PAGINAÇÃO e o uso de filtros. Filtros que devem
+* Listar Locais e permitir o uso de PAGINAÇÃO e o uso de filtros. Filtros que devem - ok
 estar disponíveis:
-* Listar locais por tipo
-* Listar locais por dimensão
-* Buscar locais por nome
+* Listar locais por tipo - ok
+* Listar locais por dimensão - ok
+* Buscar locais por nome - ok
 *
 * Episódios:
-* Listar episódio e permitir o uso de PAGINAÇÃO
-* Buscar episódio por nome
-* Buscar episódio pela tag "episode". Ex.: { "episode":"S01E01" }
+* Listar episódio e permitir o uso de PAGINAÇÃO - ok
+* Buscar episódio por nome - ok
+* Buscar episódio pela tag "episode". Ex.: { "episode":"S01E01" } - ok
 
-* (ex: "rick-sanchez.txt").
+* (ex: "rick-sanchez.txt"). - ok
 
 * Utilize o módulo http nativo do node JS e a estrutura do projeto apresentado em aula.
 

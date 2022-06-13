@@ -1,4 +1,5 @@
 const character = require('../models/character')
+const fs = require("fs")
 
 class CharacterControler {
     static async listCharacters(req, res){
@@ -30,7 +31,26 @@ class CharacterControler {
         }
     }
 
-    static async CharacterByid(req, res){
+    static async CharacterDonloadByName(req, res){
+        try {
+            const {name} = req.queryParams
+            const characterDownload = await character.getCharacterByName(name)
+            const characterName = (characterDownload[0].name).replace(" ","-");
+
+            fs.writeFile(`./tmp/${characterName}.txt`, JSON.stringify(characterDownload), 
+            erro=> erro ? console.log(erro) : console.log('sucess'))
+
+            res.writeHead(201)
+            res.end(`Arquivo com as informações de ${characterName} salvos em "./tmp"`)
+
+        } catch (error) {
+            res.writeHead(error.statusCode || 500)
+            res.end(error.message || 'server error')
+            
+        }
+    }
+
+    static async CharacterById(req, res){
         try {
             const {id} = req.queryParams
             const characterByName = await character.getCharactersById(id)
@@ -63,11 +83,42 @@ class CharacterControler {
     static async CharacterByOrigin(req, res){
         try {
             const {origin} = req.queryParams
-            console.log(origin)
-            const characterBySpecie = await character.getCharactersByOrigin(origin)
+            const characterByOrigin = await character.getCharactersByOrigin(origin)
     
             res.writeHead(200)
             res.end(JSON.stringify(characterByOrigin))
+    
+        } catch (error) {
+            res.writeHead(error.statusCode || 500)
+            res.end(error.message || 'server error')
+            
+        }
+    }
+
+    static async CharacterByStatus(req, res){
+        try {
+            const {status} = req.queryParams
+            console.log(status)
+            const characterBystatus = await character.getCharactersByStatus(status)
+    
+            res.writeHead(200)
+            res.end(JSON.stringify(characterBystatus))
+    
+        } catch (error) {
+            res.writeHead(error.statusCode || 500)
+            res.end(error.message || 'server error')
+            
+        }
+    }
+
+    static async CharacterByGender(req, res){
+        try {
+            const {gender} = req.queryParams
+            console.log(gender)
+            const characterBygender = await character.getCharactersByGender(gender)
+    
+            res.writeHead(200)
+            res.end(JSON.stringify(characterBygender))
     
         } catch (error) {
             res.writeHead(error.statusCode || 500)

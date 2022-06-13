@@ -22,4 +22,4 @@ const server = http.createServer((req, res)=>{
 
 })
 
-server.listen(port, ()=>{console.log(`serveridor iniciado na porta ${port}`)})
+server.listen(port, ()=>{console.log(`server running at port ${port}`)})
