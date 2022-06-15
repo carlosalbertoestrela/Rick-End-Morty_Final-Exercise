@@ -18,7 +18,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 ```
 npm axios install
 ```   
-3. No Terminal, digitar o comando: 
+3. para inicializar o servidor, no Terminal, digitar o comando: 
 ```
 node index.js
 ```
