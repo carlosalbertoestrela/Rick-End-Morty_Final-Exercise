@@ -41,41 +41,38 @@ Essa é uma API que realiza o consume da *The Rick and Morty API* realizando con
 
 #### Personagens:
 
-    * "/personagem-download": Realiza o download das informações de um personagem passado usando o filtro "?name={nome do personagem}"
+    * "/personagem-download" => Realiza o download das informações de um personagem passado usando o filtro "?name={nome do personagem}". O download fica disponível na pasta ``` tmp ``` no projeto.
 
-    * "/personagens": Lista todos os personagens, pode ser paginado usando o filtro "?page={número da pagina}"
+    * "/personagens" => Lista todos os personagens, pode ser paginado usando o filtro "?page={número da pagina}"
 
-    * "/personagem-id": Retorna um personagem filtrado por ID usando o filtro "?id={id do personagem}"
+    * "/personagem-id" => Retorna um personagem filtrado por ID usando o filtro "?id={id do personagem}"
 
-    * "/personagem-nome": Retorna as informações de um personagem passado usando o filtro "?name={nome do personagem}"
+    * "/personagem-nome" => Retorna as informações de um personagem passado usando o filtro "?name={nome do personagem}"
 
-    * "/personagens-status": Retorna os personagems por seu status usando o filtro "?status={Alive ou Dead}",
-    "/personagens-especie": Retorna os personagems filtrados pela especie usando o filtro "?species={especie desejada}"
+    * "/personagens-status" => Retorna os personagems por seu status usando o filtro "?status={Alive ou Dead}"
 
-    * "/personagens-origem": Retorna os personagems filtrados pela origem usando o filtro "?origin={origem desejada}"
+    "/personagens-especie" => Retorna os personagems filtrados pela especie usando o filtro "?species={especie desejada}"
 
-    * "/personagens-genero": Retorna os personagems filtrados pelo genero usando o filtro "?gender={Male ou Female}"
+    * "/personagens-origem" => Retorna os personagems filtrados pela origem usando o filtro "?origin={origem desejada}"
+
+    * "/personagens-genero" => Retorna os personagems filtrados pelo genero usando o filtro "?gender={Male ou Female}"
 
 
 #### Locais:
-    * "/locais": Lista todos os locais, pode ser paginado usando o filtro "?page={número da pagina}" 
+    * "/locais" => Lista todos os locais, pode ser paginado usando o filtro "?page={número da pagina}" 
     
-    * "/locais-tipo": Lista todos os locais filtrados por tipo usado o filtro  "?type={tipo desejado}" 
+    * "/locais-tipo" => Lista todos os locais filtrados por tipo usado o filtro  "?type={tipo desejado}" 
     
-    * "/locais-dimensao": Lista todos os locais filtrados por dimenssão usado o filtro  "?dimension={dimenssão desejada}", 
+    * "/locais-dimensao" => Lista todos os locais filtrados por dimensão usado o filtro  "?dimension={dimenssão desejada}", 
     
-    * "/locais-nome": Lista todos os locais filtrados por nome usando o filtro "?name={nome do local}"
+    * "/locais-nome" => Lista todos os locais filtrados por nome usando o filtro "?name={nome do local}"
 
 #### Episódios:
-    * "/episodios": Lista todos os episódios, pode ser paginado usando o filtro "?page={número da pagina}"
+    * "/episodios" => Lista todos os episódios, pode ser paginado usando o filtro "?page={número da pagina}"
 
-    * "/episodios-nome": Lista um ou mais episódio filtrado por nome usando o filtro "?name={nome do episódio}"
+    * "/episodios-nome" => Lista um ou mais episódios filtrado por nome usando o filtro "?name={nome do episódio}"
 
-    "/episodios-tag": Lista um ou mais episódio filtrado por tag (ex: S02E05) usando o filtro "?tag={tag do episódio}"
-
-
-
-
+    * "/episodios-tag" => Lista um ou mais episódios filtrado por tag (ex: S02E05) usando o filtro "?tag={tag do episódio}"
 
 
 
@@ -102,9 +99,10 @@ Essa é uma API que realiza o consume da *The Rick and Morty API* realizando con
 
 ## 📄 Licença
 
-Publica. Qualquer um na internet pode vizualizar este repositório.
+Pública. Qualquer um na internet pode vizualizar este repositório.
 
 ## 🎁 Agradecimentos
 
 Nossos agradecimentos ao Professor Esdras Aguilar por todo conhecimento compartilhado e pelas as excelentes dicas profissionais.
+
 Um abraço especial para toda a turma 836 da LetsCode.
