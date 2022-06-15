@@ -51,7 +51,7 @@ Essa é uma API que realiza o consume da *The Rick and Morty API* realizando con
 
     * "/personagens-status" => Retorna os personagems por seu status usando o filtro "?status={Alive ou Dead}"
 
-    "/personagens-especie" => Retorna os personagems filtrados pela especie usando o filtro "?species={especie desejada}"
+    * "/personagens-especie" => Retorna os personagems filtrados pela especie usando o filtro "?species={especie desejada}"
 
     * "/personagens-origem" => Retorna os personagems filtrados pela origem usando o filtro "?origin={origem desejada}"
 
