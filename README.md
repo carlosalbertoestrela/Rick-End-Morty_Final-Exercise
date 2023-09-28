@@ -35,7 +35,7 @@ Em caso de erro, verificar se os pré-requisitos foram atendidos.
 
 ## 🚀 Começando
 
-Essa é uma API que realiza o consume da *The Rick and Morty API* realizando consultas personalizadas a mesma.
+Essa é uma API que realiza o consumo da *The Rick and Morty API* realizando consultas personalizadas a mesma.
 
 ### EntryPoints
 
